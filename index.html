@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title>毛晨欢的社交卡片</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-  <meta name="description" content="毛晨欢的社交卡片 毛晨欢的主页 支持QQ号在线状态检测 支持在线重定向Github链接，支持API、Git Clone、Releases、Archive、Gist、Raw 文件代理加速下载服务">
-  <meta name="keywords" content="编程,编程爱好者,青少年,Sonder,git,github,proxy,github proxy,github代理,github加速,github下载,github下载加速,github文件加速,代理加速,加速下载,毛晨欢,maochenhuan,QQ在线状态检测,QQ解冻,毛晨欢的社交卡片,社交卡片">
-  <meta name="language" content="zh-CN"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛晨欢的社交卡片</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="毛晨欢的社交卡片 支持QQ在线状态检测和Github加速服务">
+    <meta name="keywords" content="编程,青少年编程,毛晨欢,Github加速,QQ状态检测">
 </head>
 
 <body>
-  <div class="card">
-    <div class="imgBx">
-      <img src="img.png">
-    </div>
-    <div class="content">
-      <div class="details">
-        <h2>毛晨欢<br><span>一名精通Python和C++的青少年编程爱好者</span></h2>
-        <div class="data">
-          <h3>5<br><span>Posts</span></h3>
-          <h3>?<br><span>Followers</span></h3>
-          <h3>?<br><span>Following</span></h3>
+    <div class="card">
+        <div class="imgBx">
+            <img src="img.png" alt="用户头像" loading="lazy">
         </div>
-        <div class="actionBtn">
-          <a href="https://maochenhuan.cn"">Follow</button></a>
-          <a href="Message" onclick="if (!window.__cfRLUnblockHandlers) return false; sendEmail('MjM1ODQ3MTI0OUBxcS5jb20=')" data-cf-modified-337dfd9008ecf9c5eabc0e1f-=""></button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-      <footer class="bg-white dark:bg-gray-800 w-full mt-auto shadow-sm">
-        <div class="max-w-[1000px] mx-auto px-4">
-            <div class="flex flex-col items-center py-6 sm:flex-row sm:justify-between sm:items-center">
-                <div class="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
-                    <a href="https://www.maochenhuan.cn" 
-                       target="_blank" 
-                       class="text-xl font-bold hover:text-blue-500 transition-colors dark:text-white mb-2">
-                        MAOCHENHUAN.CN
-                    </a>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">
-                        © <span id="current-year"></span> It's a long and beautiful life.
-                    </p>
+        <div class="content">
+            <div class="details">
+                <h2>毛晨欢<br><span>一名精通Python和C++的青少年编程爱好者</span></h2>
+                <div class="data">
+                    <div class="data-item">
+                        <h3>5</h3>
+                        <span>Posts</span>
+                    </div>
+                    <div class="data-item">
+                        <h3>?</h3>
+                        <span>Followers</span>
+                    </div>
+                    <div class="data-item">
+                        <h3>?</h3>
+                        <span>Following</span>
+                    </div>
                 </div>
-
+                <div class="actionBtn">
+                    <a href="https://maochenhuan.cn" class="btn follow-btn">Follow</a>
+                    <button class="btn message-btn" onclick="sendEmail('MjM1ODQ3MTI0OUBxcS5jb20=')">Message</button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="https://www.maochenhuan.cn" class="logo">MAOCHENHUAN.CN</a>
+            <p class="copyright">&copy; <span id="current-year"></span> It's a long and beautiful life.</p>
+        </div>
     </footer>
+
+    <script src="static/js/script.js"></script>
+    <script>
+        // 自动更新年份
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
-
-    <script src="static/js/script.js" type="337dfd9008ecf9c5eabc0e1f-text/javascript"></script>
-
 </html>
