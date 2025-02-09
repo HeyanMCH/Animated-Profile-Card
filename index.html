@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>毛晨欢的社交卡片</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,8 +32,7 @@
       </div>
     </div>
   </div>
-</body>
-    <footer class="bg-white dark:bg-gray-800 w-full mt-auto shadow-sm">
+      <footer class="bg-white dark:bg-gray-800 w-full mt-auto shadow-sm">
         <div class="max-w-[1000px] mx-auto px-4">
             <div class="flex flex-col items-center py-6 sm:flex-row sm:justify-between sm:items-center">
                 <div class="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
@@ -54,5 +53,21 @@
             </div>
         </div>
     </footer>
+</body>
+    <script type="337dfd9008ecf9c5eabc0e1f-text/javascript">
+      const currentYear = new Date().getFullYear();
+      document.getElementById('current-year').textContent = currentYear;
+      function sendEmail(encodedEmail) {
+            const decodedEmail = atob(encodedEmail);
+            const mailtoLink = document.createElement('a');
+            mailtoLink.href = 'mailto:' + decodedEmail;
+            document.body.appendChild(mailtoLink);
+            mailtoLink.click();
+            // document.body.removeChild(mailtoLink); // 可选：移除临时创建的a标签
+        }
+    </script>
+    <script src="static/js/script.js" type="337dfd9008ecf9c5eabc0e1f-text/javascript"></script>
+    <script defer src="https://cdn.akams.cn/umami/script.js" data-website-id="daefb51d-9941-44e7-9ff5-c197263ededb" data-host-url="https://umami.akams.cn" data-domains="github.akams.cn" type="337dfd9008ecf9c5eabc0e1f-text/javascript"></script>
+    <script src="https://cdn.akams.cn/static/js/waline.js" type="337dfd9008ecf9c5eabc0e1f-text/javascript"></script>
 
 </html>
